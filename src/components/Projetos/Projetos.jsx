@@ -1,9 +1,13 @@
 import React from "react"
-import "../../components/Projetos/Projetos.css"
-import FotoComercial from "../../assets/arquitetura-comercial.jpg"
-import FotoResidencial from "../../assets/arquitetura-residencial.jpg"
+import "./Projetos.css"
+
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
+
+import FotoComercial from "../../assets/arquitetura-comercial.jpg"
+import FotoResidencial from "../../assets/arquitetura-residencial.jpg"
+
+
 
 function Projetos() { 
     return (

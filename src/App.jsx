@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import './App.css'
 
+
+import Home from './components/Home/Home';
+import Projetos from './components/Projetos/Projetos';
+import Contato from './components/Contato/Contato';
+
 import { BrowserRouter, Routes, Route, } from "react-router-dom"
-import Home from './components/Home/Home'
-import Projetos from './components/Projetos/Projetos'
-import Contato from './components/Contato/Contato'
 
 function App () {
 return( 
