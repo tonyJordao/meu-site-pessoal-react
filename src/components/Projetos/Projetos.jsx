@@ -1,7 +1,7 @@
 import React from "react"
-import "./Projetos.css"
-import FotoComercial from "../../assets/arquitetura-comercial"
-import FotoResidencial from "../../assets/arquitetura-residencial"
+import "../../components/Projetos/Projetos.css"
+import FotoComercial from "../../assets/arquitetura-comercial.jpg"
+import FotoResidencial from "../../assets/arquitetura-residencial.jpg"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 

@@ -4,8 +4,7 @@ import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 
 function Contato() {
-    return (
-    <>
+    return (<>
     <Header></Header>
     <main>
            
