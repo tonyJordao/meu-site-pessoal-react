@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+   /* 16px -> 10px */
+  /* 1rem = 10px */
+}
+
+body {
+  background-color: #D9D9D9;
+
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100vw;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+header img {
+  height: 20rem;
+}
+
+header nav {
+  background-color: #BEBBBB; 
+  padding: 1rem;  
+  width: 100%;
+}
+
+header nav ul {
+  list-style: none;
+  
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-areas: 
+    "MAP FORM"
+    "TABLE TABLE"
+  ;
+  gap: 3rem;
+
+  max-width: 80rem;
+  margin: auto;
+  padding-block: 5rem;
+}
+
+main h3 {
+  font-weight: 400;
+}
+
+main .map-wrapper {
+  grid-area: MAP;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main .map-wrapper iframe {
+    width: 40rem;
+    height: 30rem;
+}
+
+main .form-wrapper {
+  grid-area: FORM;
+   
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}
+
+main .form-wrapper form {
+  width: 40rem;
+  height: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .form-wrapper form input,
+main .form-wrapper form textarea {
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+main .form-wrapper form input:invalid {
+  border-color: red;
+}
+
+main .form-wrapper form button {
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+main .form-wrapper .social-links {
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+main .form-wrapper .social-links a img {
+    width: 2.5rem;
+    
+}
+
+main .table-wrapper {
+  grid-area: TABLE;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+main .table-wrapper table thead {
+    background-color: #6AB1B1;
+
+    color: #ffffff;
+}
+
+main .table-wrapper table tbody {
+    background-color: #ffffff;
+}
+
+main .table-wrapper table td {
+  padding: 1rem;
+  text-align: center;
+}
+
+
+footer {
+  background-color: #35B9A1;
+  padding: 1rem;
+
+  text-align: center;
+  color: #ffffff;
+  font-size: .8rem
+}
+
+@media only screen and (max-width: 321px) {
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-wrapper {
+  padding: 2rem;
+}
+
+.text-wrapper p {
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+
+}
